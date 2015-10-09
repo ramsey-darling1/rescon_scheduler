@@ -1,171 +1,864 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
-  <body>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ResCon Scheduler</title>
+<link rel="stylesheet" href="stylesheets/app.css" />
+<script src="bower_components/modernizr/modernizr.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
     <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
+        <div class="large-6 columns">
+            <a class="left-off-canvas-toggle" href="#" ><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="large-6 columns">
+            <h1>ResCon</h1>
+        </div>
     </div>
-    
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="panel">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>        
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
-
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="callout panel">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.panel element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="callout panel">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="callout panel">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
-        
-        <hr />
-                
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns" />
+        <!-- Off Canvas Menu -->
+        <aside class="left-off-canvas-menu">
+            <!-- whatever you want goes here -->
+            <ul>
+                <li><a href="#">My Schedule</a></li>
+                <li><a href="#">Upcoming Programs</a></li>
+            </ul>
+        </aside>
+        <!-- main content goes here -->
+        <section class="page home">
+            <div class="row">
+                <div class="large-12 columns">
+                    <h1>My Scedule</h1>
+                    <h2>For SIGGRAPH2016</h2>
                 </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
+            </div>
+            <div class="row day d24">
+                <div class="large-12 columns">
+                    <h3>Sunday, July 24</h3> 
+                    <div class="row hour h8">
+                        <div class="large-1 columns">8am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h9">
+                        <div class="large-1 columns">9am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h10">
+                        <div class="large-1 columns">10am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h11">
+                        <div class="large-1 columns">11am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h12">
+                        <div class="large-1 columns">12am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h1">
+                        <div class="large-1 columns">1pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h2">
+                        <div class="large-1 columns">2pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h3">
+                        <div class="large-1 columns">3pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h4">
+                        <div class="large-1 columns">4pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h5">
+                        <div class="large-1 columns">5pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h6">
+                        <div class="large-1 columns">6pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h7">
+                        <div class="large-1 columns">7pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
+            <div class="row day d25">
+                <div class="large-12 columns">
+                    <h3>Monday, July 25</h3> 
+                    <div class="row hour h8">
+                        <div class="large-1 columns">8am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h9">
+                        <div class="large-1 columns">9am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h10">
+                        <div class="large-1 columns">10am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h11">
+                        <div class="large-1 columns">11am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h12">
+                        <div class="large-1 columns">12am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h1">
+                        <div class="large-1 columns">1pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h2">
+                        <div class="large-1 columns">2pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h3">
+                        <div class="large-1 columns">3pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h4">
+                        <div class="large-1 columns">4pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h5">
+                        <div class="large-1 columns">5pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h6">
+                        <div class="large-1 columns">6pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h7">
+                        <div class="large-1 columns">7pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
+            <div class="row day d26">
+                <div class="large-12 columns">
+                    <h3>Tuesday, July 26</h3> 
+                    <div class="row hour h8">
+                        <div class="large-1 columns">8am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h9">
+                        <div class="large-1 columns">9am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h10">
+                        <div class="large-1 columns">10am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h11">
+                        <div class="large-1 columns">11am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h12">
+                        <div class="large-1 columns">12am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h1">
+                        <div class="large-1 columns">1pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h2">
+                        <div class="large-1 columns">2pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h3">
+                        <div class="large-1 columns">3pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h4">
+                        <div class="large-1 columns">4pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h5">
+                        <div class="large-1 columns">5pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h6">
+                        <div class="large-1 columns">6pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h7">
+                        <div class="large-1 columns">7pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                </div>
             </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
+            <div class="row day d27">
+                <div class="large-12 columns">
+                    <h3>Wednesday, July 27</h3> 
+                    <div class="row hour h8">
+                        <div class="large-1 columns">8am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h9">
+                        <div class="large-1 columns">9am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h10">
+                        <div class="large-1 columns">10am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h11">
+                        <div class="large-1 columns">11am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h12">
+                        <div class="large-1 columns">12am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h1">
+                        <div class="large-1 columns">1pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h2">
+                        <div class="large-1 columns">2pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h3">
+                        <div class="large-1 columns">3pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h4">
+                        <div class="large-1 columns">4pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h5">
+                        <div class="large-1 columns">5pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h6">
+                        <div class="large-1 columns">6pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h7">
+                        <div class="large-1 columns">7pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
+            <div class="row day d28">
+                <div class="large-12 columns">
+                    <h3>Thursday, July 28</h3> 
+                    <div class="row hour h8">
+                        <div class="large-1 columns">8am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h9">
+                        <div class="large-1 columns">9am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h10">
+                        <div class="large-1 columns">10am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h11">
+                        <div class="large-1 columns">11am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h12">
+                        <div class="large-1 columns">12am</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h1">
+                        <div class="large-1 columns">1pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h2">
+                        <div class="large-1 columns">2pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h3">
+                        <div class="large-1 columns">3pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h4">
+                        <div class="large-1 columns">4pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h5">
+                        <div class="large-1 columns">5pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h6">
+                        <div class="large-1 columns">6pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                    <div class="row hour h7">
+                        <div class="large-1 columns">7pm</div>
+                        <div class="large-10 columns"></div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </form>
-      </div>     
-
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="small button">Simple Button</a><br/>
-        <a href="#" class="small radius button">Radius Button</a><br/>
-        <a href="#" class="small round button">Round Button</a><br/>            
-        <a href="#" class="medium success button">Success Btn</a><br/>
-        <a href="#" class="medium alert button">Alert Btn</a><br/>
-        <a href="#" class="medium secondary button">Secondary Btn</a></p>           
-        <div class="panel">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/docs/" class="small button">Go to Foundation Docs</a>          
-        </div>
-      </div>
+        </section>
+        <section class="page upcoming-programs dissapear">
+            <div class="row">
+                <div class="large-12 columns">
+                    <h1>Upcoming Programs</h1>
+                </div>
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>ACM Student Research Competition</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Appy Hour</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Art Gallery</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Art Papers</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Birds of a Feather</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Computer Animation Festival</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Courses</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Emerging Technologies</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>International Center</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Panels</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Panels</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Posters</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Production Sessions</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Real-Time Live</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Studio</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>Technical Papers</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+            <div class="row program">
+                <div class="large-12 columns">
+                    <h2>VR Village</h2>    
+                    <div class="row">
+                        <div class="large-2 columns">
+                            <span class="weekday">Sun</span>
+                            <span class="time"></span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Mon</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Tue</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Wed</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">Thu</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                        <div class="large-2 columns">
+                            <span class="weekday">All</span>
+                            <button class="button tiny">attend</button>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+        </section>
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
     </div>
+</div>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/foundation/js/foundation.min.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
