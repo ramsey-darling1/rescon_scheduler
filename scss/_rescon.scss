@@ -1,0 +1,45 @@
+/**
+ * Styles for ResCon Scheduler
+ * @rdarling42
+ *
+ **/
+
+.button {
+    display:block;
+}
+
+.dissapear {
+    display:none;
+}
+
+li {
+    list-style:none;
+}
+
+aside {
+    ul {
+        margin-left: 0; 
+    }
+    li {
+        button {
+            margin-bottom:0;
+            width:100%; 
+        } 
+    }
+}
+
+.fade {
+    opacity:0.5;
+}
+
+.blocked {
+    background:$green; 
+    min-height:1.5rem;
+}
+
+.home {
+    .large-2 {
+        text-align:right; 
+        background: $smoke;
+    }
+}
