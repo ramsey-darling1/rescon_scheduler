@@ -58,6 +58,106 @@ program_objects[4] = {
     end: "7"
 };
 
+program_objects[5] = {
+    title: "Art Gallery",
+    day: "d27",
+    start: "9",
+    end: "7"
+};
+
+program_objects[6] = {
+    title: "Art Gallery",
+    day: "d28",
+    start: "9",
+    end: "7"
+};
+
+program_objects[7] = {
+    title: "Art Papers",
+    day: "d27",
+    start: "9",
+    end: "12"
+};
+
+program_objects[8] = {
+    title: "Birds of a Feather",
+    day: "d24",
+    start: "9",
+    end: "5"
+};
+
+program_objects[9] = {
+    title: "Birds of a Feather",
+    day: "d25",
+    start: "9",
+    end: "5"
+};
+
+program_objects[10] = {
+    title: "Birds of a Feather",
+    day: "d26",
+    start: "9",
+    end: "5"
+};
+
+program_objects[11] = {
+    title: "Birds of a Feather",
+    day: "d27",
+    start: "9",
+    end: "5"
+};
+
+program_objects[12] = {
+    title: "Birds of a Feather",
+    day: "d28",
+    start: "9",
+    end: "5"
+};
+
+program_objects[13] = {
+    title: "Computer Animation Festival",
+    day: "d26",
+    start: "9",
+    end: "5"
+};
+
+program_objects[14] = {
+    title: "Computer Animation Festival",
+    day: "d28",
+    start: "9",
+    end: "5"
+};
+
+program_objects[15] = {
+    title: "Courses",
+    day: "d24",
+    start: "9",
+    end: "5"
+};
+program_objects[16] = {
+    title: "Courses",
+    day: "d25",
+    start: "9",
+    end: "5"
+};
+program_objects[17] = {
+    title: "Courses",
+    day: "d26",
+    start: "9",
+    end: "5"
+};
+program_objects[14] = {
+    title: "Courses",
+    day: "d27",
+    start: "9",
+    end: "5"
+};
+program_objects[14] = {
+    title: "Courses",
+    day: "d28",
+    start: "9",
+    end: "5"
+};
 function set_time(pid){
    //mark when the event starts
    $(".day."+program_objects[pid].day+" .hour.h"+program_objects[pid].start+" .time").addClass('blocked');
