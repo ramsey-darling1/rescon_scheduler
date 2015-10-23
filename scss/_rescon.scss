@@ -16,6 +16,11 @@ li {
     list-style:none;
 }
 
+@mixin blocked(){
+    background:$green; 
+    min-height:1.5rem;
+}
+
 aside {
     ul {
         margin-left: 0; 
@@ -33,13 +38,20 @@ aside {
 }
 
 .blocked {
-    background:$green; 
-    min-height:1.5rem;
+    @include blocked();
 }
 
 .home {
-    .large-2 {
-        text-align:right; 
+
+    .time {
         background: $smoke;
+    }
+
+    .blocked {
+        @include blocked();
+    }
+
+    .event-title {
+        color:$smoke; 
     }
 }
