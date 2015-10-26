@@ -14,8 +14,7 @@ $(document).ready(function(){
     $('.button.tiny').click(function(){
         $(this).toggleClass('success');
         //here we mark the schedule as having been updated
-        var proid = $(this).attr('data-proid');
-        var pid = turn_proid_to_pid(proid);
+        var pid = $(this).attr('data-proid');
         set_time(pid);
     });
 });
@@ -27,49 +26,49 @@ program_objects[0] = {
     title: "ACM Student Research Competition",
     day: "d27",
     start: "3",
-    end: "5"
+    end: "17"
 };
 
 program_objects[1] = {
     title: "Appy Hour",
     day: "d28",
     start: "5",
-    end: "7"
+    end: "19"
 };
 
 program_objects[2] = {
     title: "Art Gallery",
     day: "d24",
     start: "9",
-    end: "7"
+    end: "19"
 };
 
 program_objects[3] = {
     title: "Art Gallery",
     day: "d25",
     start: "9",
-    end: "7"
+    end: "19"
 };
 
 program_objects[4] = {
     title: "Art Gallery",
     day: "d26",
     start: "9",
-    end: "7"
+    end: "19"
 };
 
 program_objects[5] = {
     title: "Art Gallery",
     day: "d27",
     start: "9",
-    end: "7"
+    end: "19"
 };
 
 program_objects[6] = {
     title: "Art Gallery",
     day: "d28",
     start: "9",
-    end: "7"
+    end: "19"
 };
 
 program_objects[7] = {
@@ -83,80 +82,80 @@ program_objects[8] = {
     title: "Birds of a Feather",
     day: "d24",
     start: "9",
-    end: "5"
+    end: "17"
 };
 
 program_objects[9] = {
     title: "Birds of a Feather",
     day: "d25",
     start: "9",
-    end: "5"
+    end: "17"
 };
 
 program_objects[10] = {
     title: "Birds of a Feather",
     day: "d26",
     start: "9",
-    end: "5"
+    end: "17"
 };
 
 program_objects[11] = {
     title: "Birds of a Feather",
     day: "d27",
     start: "9",
-    end: "5"
+    end: "17"
 };
 
 program_objects[12] = {
     title: "Birds of a Feather",
     day: "d28",
     start: "9",
-    end: "5"
+    end: "17"
 };
 
 program_objects[13] = {
     title: "Computer Animation Festival",
     day: "d26",
     start: "9",
-    end: "5"
+    end: "17"
 };
 
 program_objects[14] = {
     title: "Computer Animation Festival",
     day: "d28",
     start: "9",
-    end: "5"
+    end: "17"
 };
 
 program_objects[15] = {
     title: "Courses",
     day: "d24",
     start: "9",
-    end: "5"
+    end: "17"
 };
 program_objects[16] = {
     title: "Courses",
     day: "d25",
     start: "9",
-    end: "5"
+    end: "17"
 };
 program_objects[17] = {
     title: "Courses",
     day: "d26",
     start: "9",
-    end: "5"
+    end: "17"
 };
 program_objects[14] = {
     title: "Courses",
     day: "d27",
     start: "9",
-    end: "5"
+    end: "17"
 };
 program_objects[14] = {
     title: "Courses",
     day: "d28",
     start: "9",
-    end: "5"
+    end: "17"
 };
 function set_time(pid){
    //mark when the event starts
