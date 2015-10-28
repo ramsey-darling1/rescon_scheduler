@@ -19,6 +19,21 @@ $(document).ready(function(){
     });
 });
 
+
+function set_time(pid){
+   //mark when the event starts
+   $(".day."+program_objects[pid].day+" .hour.h"+program_objects[pid].start+" .time").addClass('blocked');
+   //mark when the event ends
+   $(".day."+program_objects[pid].day+" .hour.h"+program_objects[pid].end+" .time").addClass('blocked');
+   //loop through and mark the hours between start and end
+   for(var c = Number(program_objects[pid].start); c < Number(program_objects[pid].end); c++){
+       $(".day."+program_objects[pid].day+" .hour.h"+c+" .time").addClass('blocked');
+   }
+   //add title
+   $(".day."+program_objects[pid].day+" .hour.h"+program_objects[pid].start+" .time")
+       .append('<span class="event-title"> '+program_objects[pid].title+' </span>');
+}
+
 //define program objects
 var program_objects = [];
 
@@ -145,62 +160,226 @@ program_objects[17] = {
     start: "9",
     end: "17"
 };
-program_objects[14] = {
+program_objects[18] = {
     title: "Courses",
     day: "d27",
     start: "9",
     end: "17"
 };
-program_objects[14] = {
+program_objects[19] = {
     title: "Courses",
     day: "d28",
     start: "9",
     end: "17"
 };
-function set_time(pid){
-   //mark when the event starts
-   $(".day."+program_objects[pid].day+" .hour.h"+program_objects[pid].start+" .time").addClass('blocked');
-   //mark when the event ends
-   $(".day."+program_objects[pid].day+" .hour.h"+program_objects[pid].end+" .time").addClass('blocked');
-   //loop through and mark the hours between start and end
-   for(var c = program_objects[pid].start; c < program_objects[pid].end; c++){
-       $(".day."+program_objects[pid].day+" .hour.h"+c+" .time").addClass('blocked');
-   }
-   //add title
-   $(".day."+program_objects[pid].day+" .hour.h"+program_objects[pid].start+" .time")
-       .append('<span class="event-title"> '+program_objects[pid].title+' </span>');
-}
+program_objects[20] = {
+    title: "Emerging Technologies",
+    day: "d24",
+    start: "9",
+    end: "17"
+};
+program_objects[21] = {
+    title: "Emerging Technologies",
+    day: "d25",
+    start: "9",
+    end: "17"
+};
+program_objects[22] = {
+    title: "Emerging Technologies",
+    day: "d26",
+    start: "9",
+    end: "17"
+};
+program_objects[23] = {
+    title: "Emerging Technologies",
+    day: "d27",
+    start: "9",
+    end: "17"
+};
+program_objects[24] = {
+    title: "Emerging Technologies",
+    day: "d28",
+    start: "9",
+    end: "17"
+};
+program_objects[25] = {
+    title: "International Center",
+    day: "d24",
+    start: "9",
+    end: "17"
+};
+program_objects[26] = {
+    title: "International Center",
+    day: "d25",
+    start: "9",
+    end: "17"
+};
+program_objects[27] = {
+    title: "International Center",
+    day: "d26",
+    start: "9",
+    end: "17"
+};
+program_objects[28] = {
+    title: "International Center",
+    day: "d27",
+    start: "9",
+    end: "17"
+};
+program_objects[29] = {
+    title: "International Center",
+    day: "d28",
+    start: "9",
+    end: "17"
+};
+program_objects[30] = {
+    title: "Panels",
+    day: "d24",
+    start: "9",
+    end: "17"
+};
+program_objects[31] = {
+    title: "Panels",
+    day: "d25",
+    start: "9",
+    end: "17"
+};
+program_objects[32] = {
+    title: "Panels",
+    day: "d26",
+    start: "9",
+    end: "17"
+};
+program_objects[33] = {
+    title: "Panels",
+    day: "d27",
+    start: "9",
+    end: "17"
+};
+program_objects[34] = {
+    title: "Panels",
+    day: "d28",
+    start: "9",
+    end: "17"
+};
+program_objects[35] = {
+    title: "Posters",
+    day: "d24",
+    start: "9",
+    end: "17"
+};
+program_objects[36] = {
+    title: "Posters",
+    day: "d25",
+    start: "9",
+    end: "17"
+};
+program_objects[37] = {
+    title: "Posters",
+    day: "d26",
+    start: "9",
+    end: "17"
+};
+program_objects[38] = {
+    title: "Posters",
+    day: "d27",
+    start: "9",
+    end: "17"
+};
+program_objects[39] = {
+    title: "Posters",
+    day: "d28",
+    start: "9",
+    end: "17"
+};
+program_objects[40] = {
+    title: "Production Sessions",
+    day: "d24",
+    start: "9",
+    end: "17"
+};
+program_objects[41] = {
+    title: "Production Sessions",
+    day: "d25",
+    start: "9",
+    end: "17"
+};
+program_objects[42] = {
+    title: "Production Sessions",
+    day: "d26",
+    start: "9",
+    end: "17"
+};
+program_objects[43] = {
+    title: "Production Sessions",
+    day: "d27",
+    start: "9",
+    end: "17"
+};
+program_objects[44] = {
+    title: "Production Sessions",
+    day: "d28",
+    start: "9",
+    end: "17"
+};
+program_objects[45] = {
+    title: "Real-Time Live",
+    day: "d26",
+    start: "9",
+    end: "17"
+};
+program_objects[46] = {
+    title: "Studio",
+    day: "d24",
+    start: "9",
+    end: "17"
+};
+program_objects[47] = {
+    title: "Studio",
+    day: "d25",
+    start: "9",
+    end: "17"
+};
+program_objects[48] = {
+    title: "Studio",
+    day: "d26",
+    start: "9",
+    end: "17"
+};
+program_objects[49] = {
+    title: "Studio",
+    day: "d27",
+    start: "9",
+    end: "17"
+};
+program_objects[50] = {
+    title: "Studio",
+    day: "d28",
+    start: "9",
+    end: "17"
+};
+program_objects[50] = {
+    title: "Technical Papers",
+    day: "d25",
+    start: "9",
+    end: "17"
+};
+program_objects[51] = {
+    title: "Technical Papers",
+    day: "d26",
+    start: "9",
+    end: "17"
+};
+program_objects[52] = {
+    title: "Technical Papers",
+    day: "d27",
+    start: "9",
+    end: "17"
+};
+program_objects[53] = {
+    title: "Technical Papers",
+    day: "d28",
+    start: "9",
+    end: "17"
+};
 
-function turn_proid_to_pid(proid){
-    //returns pid
-    //proid is a string set in the html
-    //pid is a number which can be used as an array reference
-    var pid;
-    switch(proid){
-        case 'p1': 
-            pid = 0;
-            break;
-        case 'p3': 
-            pid = 1;
-            break;
-        case 'p5': 
-            pid = 2;
-            break;
-        case 'p7': 
-            pid = 3;
-            break;
-        case 'p9': 
-            pid = 4;
-            break;
-        case 'p11': 
-            pid = 5;
-            break;
-        case 'p13': 
-            pid = 6;
-            break;
-        case 'p15': 
-            pid = 7;
-            break;
-    }
-    return pid;
-}
